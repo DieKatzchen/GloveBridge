@@ -5,8 +5,8 @@ from bleak import BleakScanner, BleakClient
 
 # Define BLE devices and their corresponding named pipes
 TARGET_DEVICES = {
-    "lucidgloves-right": { "pipe_rx": "\\.\pipe\vrapplication\input\glove\v1\right", "pipe_tx": "\\.\pipe\vrapplication\ffb\curl\right", "address": None },
-    "lucidgloves-left": { "pipe_rx": "\\.\pipe\vrapplication\input\glove\v1\left", "pipe_tx": "\\.\pipe\vrapplication\ffb\curl\left", "address": None }
+    "lucidgloves-right": { "pipe_rx": "\\\\.\\pipe\\vrapplication\\input\\glove\\v1\\right", "pipe_tx": "\\\\.\\pipe\\vrapplication\\ffb\\curl\\right", "address": None },
+    "lucidgloves-left": { "pipe_rx": "\\\\.\\pipe\\vrapplication\\input\\glove\\v1\\left", "pipe_tx": "\\\\.\\pipe\\vrapplication\\ffb\\curl\\left", "address": None }
 }
 CHARACTERISTIC_UUID_RX = "6E400003-B5A3-F393-E0A9-E50E24DCCA9E"  # Replace with actual RX characteristic UUID
 CHARACTERISTIC_UUID_TX = "6E400002-B5A3-F393-E0A9-E50E24DCCA9E"  # Replace with actual TX characteristic UUID
